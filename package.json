@@ -1,0 +1,36 @@
+{
+  "name": "vsop87",
+  "version": "1.0.0",
+  "description": "A fast implementation of the VSOP87 theory in JavaScript.",
+  "author": "G.C. Marty <edo999@gmail.com> (https://gu.illau.me)",
+  "keywords": [
+    "vsop87",
+    "astronomy",
+    "planets"
+  ],
+  "main": "dist/vsop87c.umd.js",
+  "module": "dist/vsop87c.esm.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/*.js"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "rollup": "^1.27.0",
+    "rollup-plugin-size-snapshot": "^0.10.0",
+    "rollup-plugin-terser": "^5.1.2"
+  },
+  "scripts": {
+    "test": "mocha",
+    "prettier": "prettier --write \"{src,test}/**/*.js\"",
+    "build": "rollup --config"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "always",
+    "trailingComma": "es5"
+  }
+}
