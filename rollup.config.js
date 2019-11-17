@@ -3,6 +3,21 @@ import { terser } from 'rollup-plugin-terser';
 
 module.exports = [
   {
+    input: 'src/a/index.js',
+    plugins: [sizeSnapshot(), terser()],
+    output: [
+      {
+        file: 'dist/vsop87a.umd.js',
+        format: 'umd',
+        name: 'vsop87a',
+      },
+      {
+        file: 'dist/vsop87a.esm.js',
+        format: 'esm',
+      },
+    ],
+  },
+  {
     input: 'src/c/index.js',
     plugins: [sizeSnapshot(), terser()],
     output: [

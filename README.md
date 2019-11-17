@@ -4,9 +4,9 @@
 
 # What?
 
-A JavaScript library that implements series C of the VSOP87 theory.
+A JavaScript library that implements series A and C of the VSOP87 theory.
 
-It's big: ~826 Kb gzipped (2.29 Mb unzipped).
+It's big: ~719 Kb to ~826 Kb gzipped depending on the series (~2.08 Mb to ~2.29 Mb unzipped).
 
 # Install
 
@@ -19,7 +19,9 @@ $ yarn vsop87
 in node:
 
 ```js
-const vsop87c = require('vsop87');
+const vsop87a = require('vsop87/dist/vsop87a.umd.js');
+// Or:
+const vsop87c = require('vsop87/dist/vsop87c.umd.js');
 
 // Return an object with the (x,y,z) coordinates of each planet.
 const coords = vsop87c(2451545);
@@ -28,7 +30,9 @@ const coords = vsop87c(2451545);
 in browser:
 
 ```js
-import vsop87c from 'vsop87';
+import vsop87a from 'vsop87/dist/vsop87a.esm.js';
+// Or:
+import vsop87c from 'vsop87/dist/vsop87c.esm.js';
 
 // Return an object with the (x,y,z) coordinates of each planet.
 const coords = vsop87c(2451545);
@@ -57,7 +61,7 @@ By doing so, a few optimisations are possible:
 - Avoid calls to cosine when the value is Pi
 - The result code ensures good level of minifiability.
 
-Unlike other ports, this one is incomplete as it only support VSOP87 series C. But it is fully tested and compliant with the official check values.
+Unlike other ports, this one is incomplete as it only support VSOP87 series A and C. But it is fully tested and compliant with the official check values.
 
 I accept PR for extending support to other series.
 

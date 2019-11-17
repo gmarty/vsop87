@@ -10,8 +10,7 @@ import jupiter from './vsop87c-jupiter';
 import saturn from './vsop87c-saturn';
 import uranus from './vsop87c-uranus';
 import neptune from './vsop87c-neptune';
-
-const getT = (jd) => (jd - 2451545) / 365250;
+import { getT } from '../utils/index';
 
 export default (jdtt = 2451545) => {
   const t = getT(jdtt);
