@@ -1,5 +1,5 @@
 const assert = require('assert');
-const vsop87a = require('../dist/vsop87a.umd.js');
+const vsop87a = require('../dist/vsop87a');
 
 const PRECISION = 10;
 

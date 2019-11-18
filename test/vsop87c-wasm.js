@@ -1,5 +1,5 @@
 const assert = require('assert');
-const vsop87cLoader = require('../dist/vsop87c-wasm.js');
+const vsop87cLoader = require('../dist/vsop87c-wasm');
 
 const PRECISION = 10;
 

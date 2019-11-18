@@ -16,12 +16,13 @@ $ yarn vsop87
 
 # Usage
 
+## JavaScript version
+
 In node:
 
 ```js
-const vsop87a = require('vsop87/dist/vsop87a.umd.js');
-// Or:
-const vsop87c = require('vsop87/dist/vsop87c.umd.js');
+// Can also be 'vsop87/dist/vsop87a'.
+const vsop87c = require('vsop87/dist/vsop87c');
 
 // Get an object with the (x,y,z) coordinates of each planet.
 const coords = vsop87c(2451545);
@@ -30,8 +31,21 @@ const coords = vsop87c(2451545);
 In browsers, we recommend to load the script asynchronously:
 
 ```js
-// Can also be 'vsop87/dist/vsop87a.esm.js'
-import('vsop87/dist/vsop87c.esm.js').then((vsop87c) => {
+// Can also be 'vsop87/dist/vsop87a'.
+import('vsop87/dist/vsop87c').then((vsop87c) => {
+  // Get an object with the (x,y,z) coordinates of each planet.
+  const coords = vsop87c(2451545);
+});
+```
+
+## WebAssembly version
+
+In browsers:
+
+```js
+import vsop87cLoader from 'vsop87/dist/vsop87c-wasm';
+
+vsop87cLoader.then((vsop87c) => {
   // Get an object with the (x,y,z) coordinates of each planet.
   const coords = vsop87c(2451545);
 });
@@ -66,7 +80,7 @@ I accept PR for extending support to other series.
 
 # Contribute
 
-## Build the pure JavaScript version
+## Build the JavaScript version
 
 ```sh
 $ yarn build

@@ -8,8 +8,8 @@
     "astronomy",
     "planets"
   ],
-  "main": "dist/vsop87c.umd.js",
-  "module": "dist/vsop87c.esm.js",
+  "main": "dist/vsop87c.js",
+  "module": "dist/vsop87c.js",
   "files": [
     "LICENSE",
     "README.md",

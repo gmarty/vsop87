@@ -8,13 +8,9 @@ module.exports = [
     plugins: [sizeSnapshot(), terser()],
     output: [
       {
-        file: 'dist/vsop87a.umd.js',
+        file: 'dist/vsop87a.js',
         format: 'umd',
         name: 'vsop87a',
-      },
-      {
-        file: 'dist/vsop87a.esm.js',
-        format: 'esm',
       },
     ],
   },
@@ -23,13 +19,9 @@ module.exports = [
     plugins: [sizeSnapshot(), terser()],
     output: [
       {
-        file: 'dist/vsop87c.umd.js',
+        file: 'dist/vsop87c.js',
         format: 'umd',
         name: 'vsop87c',
-      },
-      {
-        file: 'dist/vsop87c.esm.js',
-        format: 'esm',
       },
     ],
   },
