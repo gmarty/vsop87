@@ -1,6 +1,6 @@
 {
   "name": "vsop87",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A fast implementation of the VSOP87 theory in JavaScript.",
   "author": "G.C. Marty <edo999@gmail.com> (https://gu.illau.me)",
   "keywords": [
