@@ -1,4 +1,23 @@
 {
+  "dist/vsop87a.esm.js": {
+    "bundled": 2911794,
+    "minified": 2127446,
+    "gzipped": 735972,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 951
+      }
+    }
+  },
+  "dist/vsop87a.umd.js": {
+    "bundled": 2998769,
+    "minified": 2126776,
+    "gzipped": 736006
+  },
   "dist/vsop87c.esm.js": {
     "bundled": 3276618,
     "minified": 2398215,
@@ -18,23 +37,9 @@
     "minified": 2397615,
     "gzipped": 846558
   },
-  "dist/vsop87a.umd.js": {
-    "bundled": 2998769,
-    "minified": 2126776,
-    "gzipped": 736006
-  },
-  "dist/vsop87a.esm.js": {
-    "bundled": 2911794,
-    "minified": 2127446,
-    "gzipped": 735972,
-    "treeshaked": {
-      "rollup": {
-        "code": 0,
-        "import_statements": 0
-      },
-      "webpack": {
-        "code": 951
-      }
-    }
+  "dist/vsop87c-wasm.js": {
+    "bundled": 2584886,
+    "minified": 2583348,
+    "gzipped": 1371183
   }
 }

@@ -16,26 +16,25 @@ $ yarn vsop87
 
 # Usage
 
-in node:
+In node:
 
 ```js
 const vsop87a = require('vsop87/dist/vsop87a.umd.js');
 // Or:
 const vsop87c = require('vsop87/dist/vsop87c.umd.js');
 
-// Return an object with the (x,y,z) coordinates of each planet.
+// Get an object with the (x,y,z) coordinates of each planet.
 const coords = vsop87c(2451545);
 ```
 
-in browser:
+In browsers, we recommend to load the script asynchronously:
 
 ```js
-import vsop87a from 'vsop87/dist/vsop87a.esm.js';
-// Or:
-import vsop87c from 'vsop87/dist/vsop87c.esm.js';
-
-// Return an object with the (x,y,z) coordinates of each planet.
-const coords = vsop87c(2451545);
+// Can also be 'vsop87/dist/vsop87a.esm.js'
+import('vsop87/dist/vsop87c.esm.js').then((vsop87c) => {
+  // Get an object with the (x,y,z) coordinates of each planet.
+  const coords = vsop87c(2451545);
+});
 ```
 
 # About the precision
@@ -67,7 +66,7 @@ I accept PR for extending support to other series.
 
 # Contribute
 
-## Build
+## Build the pure JavaScript version
 
 ```sh
 $ yarn build
@@ -79,7 +78,17 @@ If a `RangeError: Maximum call stack size exceeded` error message occurs at buil
 $ node --stack-size=1968 node_modules/.bin/rollup --config
 ```
 
-Same with when using Prettier:
+# Build the WebAssembly version
+
+Install emscripten, then:
+
+```sh
+$ ./build && yarn build
+```
+
+## Using Prettier
+
+If Prettier struggles to work on the big files, try the following:
 
 ```sh
 $ node --stack-size=1968 node_modules/.bin/prettier --write "{src,test}/**/*.js"
