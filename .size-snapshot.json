@@ -10,8 +10,8 @@
     "gzipped": 846558
   },
   "dist/vsop87c-wasm.js": {
-    "bundled": 2584886,
-    "minified": 2583348,
-    "gzipped": 1371183
+    "bundled": 2585547,
+    "minified": 2583836,
+    "gzipped": 1368544
   }
 }

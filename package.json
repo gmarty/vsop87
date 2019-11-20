@@ -8,6 +8,7 @@
     "astronomy",
     "planets"
   ],
+  "license": "MIT",
   "main": "dist/vsop87c.js",
   "module": "dist/vsop87c.js",
   "files": [
@@ -15,7 +16,6 @@
     "README.md",
     "dist/*.js"
   ],
-  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-wasm": "^3.0.0",
     "mocha": "^6.2.2",

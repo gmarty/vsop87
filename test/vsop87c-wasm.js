@@ -3,7 +3,7 @@ const vsop87cLoader = require('../dist/vsop87c-wasm');
 
 const PRECISION = 10;
 
-describe('vsop87c()', () => {
+describe('vsop87cLoader()', () => {
   let vsop87c;
   before(async () => {
     try {

@@ -11,7 +11,7 @@ It's big: ~719 Kb to ~826 Kb gzipped depending on the series (~2.08 Mb to ~2.29 
 # Install
 
 ```sh
-$ yarn vsop87
+$ yarn add vsop87
 ```
 
 # Usage
@@ -92,7 +92,7 @@ If a `RangeError: Maximum call stack size exceeded` error message occurs at buil
 $ node --stack-size=1968 node_modules/.bin/rollup --config
 ```
 
-# Build the WebAssembly version
+## Build the WebAssembly version
 
 Install emscripten, then:
 
@@ -108,7 +108,7 @@ If Prettier struggles to work on the big files, try the following:
 $ node --stack-size=1968 node_modules/.bin/prettier --write "{src,test}/**/*.js"
 ```
 
-## Run the unit test
+## Run the unit tests
 
 Make sure to run the build script first, then:
 

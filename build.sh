@@ -1,4 +1,4 @@
-emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' \
+emcc -Oz -s WASM=1 -s FILESYSTEM=0 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' \
     src/c/vsop87c/vsop87c-mercury.c \
     src/c/vsop87c/vsop87c-venus.c \
     src/c/vsop87c/vsop87c-earth.c \
