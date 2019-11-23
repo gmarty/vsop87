@@ -6,7 +6,8 @@
   "keywords": [
     "vsop87",
     "astronomy",
-    "planets"
+    "planets",
+    "ephemeris"
   ],
   "license": "MIT",
   "main": "dist/vsop87c.js",

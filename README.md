@@ -94,7 +94,7 @@ $ node --stack-size=1968 node_modules/.bin/rollup --config
 
 ## Build the WebAssembly version
 
-Install emscripten, then:
+Install [emscripten](https://emscripten.org/docs/getting_started/downloads.html), then:
 
 ```sh
 $ ./build && yarn build
